@@ -1,13 +1,15 @@
 import { defineConfig } from "vitepress";
 
+const base = "/ElowenNotes/";
+
 export default defineConfig({
   title: "Study Notes",
-  base: "/ElowenNotes/",
+  base,
   description: "面向长期积累的学习笔记平台",
   cleanUrls: true,
   lastUpdated: true,
   head: [
-    ["link", { rel: "icon", href: "/favicon.svg", type: "image/svg+xml" }],
+    ["link", { rel: "icon", href: `${base}favicon.svg`, type: "image/svg+xml" }],
   ],
   themeConfig: {
     logo: "/logo.svg",
