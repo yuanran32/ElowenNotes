@@ -1,0 +1,40 @@
+# 深拷贝
+
+深拷贝考察类型判断、引用关系、循环引用和特殊对象处理。
+
+## 基础实现
+
+```ts
+function deepClone<T>(value: T, cache = new WeakMap<object, any>()): T {
+  if (value === null || typeof value !== "object") return value;
+
+  if (cache.has(value as object)) return cache.get(value as object);
+
+  if (value instanceof Date) return new Date(value) as T;
+  if (value instanceof RegExp) return new RegExp(value) as T;
+
+  const result: any = Array.isArray(value) ? [] : {};
+  cache.set(value as object, result);
+
+  Reflect.ownKeys(value as object).forEach((key) => {
+    result[key] = deepClone((value as any)[key], cache);
+  });
+
+  return result;
+}
+```
+
+## 必答点
+
+- 基本类型直接返回。
+- 对象和数组需要递归复制。
+- 用 `WeakMap` 解决循环引用。
+- 用 `Reflect.ownKeys` 处理 Symbol key。
+- Date、RegExp 等特殊对象需要单独处理。
+
+## 常见追问
+
+- 函数要不要拷贝？
+- 原型链要不要保留？
+- Map、Set 怎么处理？
+- JSON 深拷贝有什么问题？
