@@ -6,8 +6,8 @@
 
 | 模块 | 用途 |
 | --- | --- |
-| [手撕代码](/frontend/handwriting/) | 训练高频实现题、边界处理和现场编码表达 |
-| [前端八股](/frontend/bagu/) | 整理 JavaScript、浏览器、Vue、工程化等原理题 |
+| [handwriting（手撕代码）](/frontend/handwriting/) | 训练高频实现题、边界处理和现场编码表达 |
+| [bagu（前端八股）](/frontend/bagu/) | 整理 JavaScript、浏览器、Vue、工程化等原理题 |
 | [面试题库](/interview/) | 将知识点转成可口播的答案和项目追问 |
 
 ## JavaScript

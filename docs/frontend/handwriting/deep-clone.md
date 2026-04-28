@@ -3,6 +3,37 @@
 深拷贝考察类型判断、引用关系、循环引用和特殊对象处理。
 
 ## 基础实现
+```js
+JSON 极简深拷贝
+const newObj = JSON.parse(JSON.stringify(oldObj));
+```
+
+```js
+完整标准版
+function deepClone(obj) {
+  // 1. 基础类型 / null 直接返回
+  if (obj === null || typeof obj !== 'object') {
+    return obj
+  }
+
+  // 2. 处理日期、正则
+  if (obj instanceof Date) return new Date(obj)
+  if (obj instanceof RegExp) return new RegExp(obj.source, obj.flags)
+
+  // 3. 创建新容器 数组/对象
+  const cloneObj = Array.isArray(obj) ? [] : {}
+
+  // 4. 递归遍历每一项
+  for (let key in obj) {
+    // 只拷贝自身属性，过滤原型
+    if (obj.hasOwnProperty(key)) {
+      cloneObj[key] = deepClone(obj[key])
+    }
+  }
+
+  return cloneObj
+}
+```
 
 ```ts
 function deepClone<T>(value: T, cache = new WeakMap<object, any>()): T {

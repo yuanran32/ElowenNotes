@@ -48,7 +48,7 @@ export default defineConfig({
           items: [{ text: "前端总览", link: "/frontend/" }],
         },
         {
-          text: "手撕代码",
+          text: "handwriting（手撕代码）",
           collapsed: false,
           items: [
             { text: "总览", link: "/frontend/handwriting/" },
@@ -61,14 +61,29 @@ export default defineConfig({
           ],
         },
         {
-          text: "前端八股",
+          text: "bagu（前端八股）",
           collapsed: false,
           items: [
             { text: "总览", link: "/frontend/bagu/" },
-            { text: "JavaScript", link: "/frontend/bagu/javascript" },
-            { text: "浏览器", link: "/frontend/bagu/browser" },
-            { text: "Vue", link: "/frontend/bagu/vue" },
-            { text: "工程化", link: "/frontend/bagu/engineering" },
+            {
+              text: "js",
+              collapsed: false,
+              items: [
+                { text: "总览", link: "/frontend/bagu/javascript/" },
+                { text: "闭包", link: "/frontend/bagu/javascript/closure" },
+                { text: "原型链", link: "/frontend/bagu/javascript/prototype" },
+                { text: "异步", link: "/frontend/bagu/javascript/async" },
+              ],
+            },
+            {
+              text: "CSS",
+              collapsed: false,
+              items: [
+                { text: "总览", link: "/frontend/bagu/css/" },
+                { text: "布局", link: "/frontend/bagu/css/layout" },
+                { text: "Flex/Grid", link: "/frontend/bagu/css/flex-grid" },
+              ],
+            },
           ],
         },
       ],

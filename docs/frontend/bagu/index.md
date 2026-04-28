@@ -1,4 +1,4 @@
-# 前端八股
+# bagu（前端八股）
 
 前端八股用于整理高频原理题。答案不要只背定义，建议按“结论 -> 原理 -> 场景 -> 边界 -> 追问”组织。
 
@@ -6,10 +6,10 @@
 
 | 分类 | 内容 |
 | --- | --- |
-| [JavaScript](/frontend/bagu/javascript) | 闭包、原型链、this、Promise、事件循环 |
-| [浏览器](/frontend/bagu/browser) | 渲染流程、缓存、跨域、安全、URL 输入过程 |
-| [Vue](/frontend/bagu/vue) | 响应式、diff、computed、watch、nextTick |
-| [工程化](/frontend/bagu/engineering) | Vite、Tree Shaking、首屏优化、监控、CI/CD |
+| JavaScript | 闭包、原型链、this、Promise、事件循环 |
+| 浏览器 | 渲染流程、缓存、跨域、安全、URL 输入过程 |
+| Vue | 响应式、diff、computed、watch、nextTick |
+| 工程化 | Vite、Tree Shaking、首屏优化、监控、CI/CD |
 
 ## 回答结构
 
