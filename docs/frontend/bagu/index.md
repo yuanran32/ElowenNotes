@@ -6,9 +6,10 @@
 
 | 分类 | 内容 |
 | --- | --- |
-| JavaScript | 闭包、原型链、this、Promise、事件循环 |
+| [JavaScript](/frontend/bagu/javascript/) | 闭包、原型链、this、Promise、事件循环 |
 | 浏览器 | 渲染流程、缓存、跨域、安全、URL 输入过程 |
-| Vue | 响应式、diff、computed、watch、nextTick |
+| [CSS](/frontend/bagu/css/) | 盒模型、BFC、布局、Flex/Grid、响应式 |
+| [Vue](/frontend/bagu/vue/) | 响应式、diff、computed、watch、nextTick |
 | 工程化 | Vite、Tree Shaking、首屏优化、监控、CI/CD |
 
 ## 回答结构
