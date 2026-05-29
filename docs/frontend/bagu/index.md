@@ -10,7 +10,7 @@
 | 浏览器 | 渲染流程、缓存、跨域、安全、URL 输入过程 |
 | [CSS](/frontend/bagu/css/) | 盒模型、BFC、布局、Flex/Grid、响应式 |
 | [Vue](/frontend/bagu/vue/) | 响应式、diff、computed、watch、nextTick |
-| 工程化 | Vite、Tree Shaking、首屏优化、监控、CI/CD |
+| [工程化](/frontend/bagu/engineering/) | Vite、Tree Shaking、首屏优化、监控、CI/CD |
 
 ## 回答结构
 
