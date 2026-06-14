@@ -236,7 +236,26 @@ export default defineConfig({
       "/misc/": [
         {
           text: "Misc",
-          items: [{ text: "其他内容", link: "/misc/" }],
+          items: [
+            { text: "总览", link: "/misc/" },
+            { text: "文章沉淀", link: "/misc/articles/" },
+            { text: "读书笔记", link: "/misc/books/" },
+            { text: "工具效率", link: "/misc/tools/" },
+            { text: "问题复盘", link: "/misc/reviews/" },
+            { text: "面试杂项", link: "/misc/interview/" },
+          ],
+        },
+        {
+          text: "模板",
+          collapsed: true,
+          items: [
+            { text: "模板总览", link: "/misc/templates/" },
+            { text: "文章笔记模板", link: "/misc/templates/article-template" },
+            { text: "读书笔记模板", link: "/misc/templates/book-template" },
+            { text: "问题复盘模板", link: "/misc/templates/review-template" },
+            { text: "工具笔记模板", link: "/misc/templates/tool-template" },
+            { text: "面试复盘模板", link: "/misc/templates/interview-template" },
+          ],
         },
       ],
       "/interview/": [
