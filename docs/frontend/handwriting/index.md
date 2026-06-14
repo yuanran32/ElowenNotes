@@ -1,31 +1,39 @@
-# handwriting（手撕代码）
+# 前端手撕题
 
-手撕代码用于训练“能写出来、能讲清楚、能处理边界”的现场编码能力。每道题建议记录题意、思路、实现、复杂度、边界用例和面试讲法。
+本目录用于整理前端面试高频手写题。建议练习时每道题都按下面五点准备：
 
-## 目录
+1. 问题定义：这个函数或组件要解决什么问题。
+2. 核心思路：用什么数据结构、流程或浏览器 API。
+3. 边界条件：空值、异常值、重复调用、异步竞态、兼容性。
+4. 复杂度：时间复杂度和空间复杂度。
+5. 可扩展点：生产环境还要补哪些能力。
 
-| 分类 | 内容 |
-| --- | --- |
-| [基础 API](/frontend/handwriting/basic-api) | call、apply、bind、new、instanceof |
-| [函数工具](/frontend/handwriting/function-tools) | debounce、throttle、curry、compose |
-| [深拷贝](/frontend/handwriting/deep-clone) | deepClone、循环引用、特殊对象 |
-| [异步控制](/frontend/handwriting/async-control) | Promise.all、Promise.race、并发池 |
-| [数据结构](/frontend/handwriting/data-structure) | LRU、发布订阅、事件总线 |
-| [场景题](/frontend/handwriting/scenario) | 虚拟列表、懒加载、请求重试 |
+## 目录约定
 
-## 答题模板
+每个分类目录按两层维护：
 
-1. 先确认输入输出和边界条件。
-2. 说明核心思路，不急着写代码。
-3. 写最小可运行版本。
-4. 补异常情况和特殊类型。
-5. 给出复杂度和可优化点。
+1. 分类根目录下的主题文档负责整理题单、考点和边界。
+2. `impl/` 目录负责整理具体代码、测试用例、复杂度和面试口述。
 
-## 复盘表
+## 文件夹索引
 
-| 题目 | 是否独立写出 | 卡点 | 下次行动 |
-| --- | --- | --- | --- |
-| debounce |  |  |  |
-| throttle |  |  |  |
-| Promise.all |  |  |  |
-| deepClone |  |  |  |
+- [javascript](./javascript/)：JavaScript 基础、原型、拷贝、数组方法、函数式工具。
+- [async-promise](./async-promise/)：Promise、异步调度、并发控制、请求重试。
+- [browser-css](./browser-css/)：DOM、浏览器 API、CSS 布局、性能优化。
+- [react-vue](./react-vue/)：React Hooks、Redux、Vue 响应式、路由状态。
+- [engineering-network](./engineering-network/)：工程化、打包器、Loader、网络、安全与鉴权。
+- [algorithm](./algorithm/)：前端高频算法与数据结构。
+- [scenario](./scenario/)：业务场景综合题。
+
+## 高频追问
+
+1. 这个实现有哪些边界情况？
+2. 为什么这样设计数据结构？
+3. 如果数据量扩大 100 倍，瓶颈在哪里？
+4. 如何写单元测试？
+5. 如何处理异常和降级？
+6. 如何避免内存泄漏？
+7. 浏览器兼容性如何？
+8. 移动端有什么差异？
+9. SSR 场景是否可用？
+10. TypeScript 类型怎么设计？
